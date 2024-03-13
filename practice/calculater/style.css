@@ -1,0 +1,20 @@
+body{
+    background-color: #66fcf1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#calc{
+    width: 350px;
+    height: 450px;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 20px auto;
+    background-color: #d6c9f2;
+    box-shadow: rgba(0,0,0,0.3) 0px, 19px, 38px, rgba(0,0,0,0.22) 0px, 15px, 12px;
+
+}

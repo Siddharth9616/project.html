@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Menu 
+    </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #1e1e1e;
+            background-image: url(lights-night-unsharp-blured.jpg);
+            background-size: cover;
+            height: 100vh;
+            font-family: "raleway", sans-serif; letter-spacing: 1px;
+        }
+        h1{
+            text-align: center;
+            color: #fff;
+            padding-top: 20px;
+        }
+        ul{
+            list-style: none;
+        }
+        nav{
+            height: 40px;
+            margin: 40px auto;
+            background-color: rgba(23, 23, 50, 0.7);
+            text-align: center;
+            border-radius: 4px;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+        }
+        .main > li{
+            margin: 0 2%;
+        }
+        .main > li a{
+            border-left: 1px solid rgba(23, 23, 50, 0.7);
+        }
+        a{
+            text-decoration: none;
+            color: #ffe;
+            text-transform: capitalize;
+            font-family: monospace;
+            display: block;
+            padding: 10px 15px;
+            font-size: 16px;
+            transition: background-color 0.5s ease-in-out;
+            font-family: "raleway", sans-serif;
+        }
+        a:hover {
+            background-color: #631818;
+        }
+        .drop li{
+            opacity: 0;
+            transform-origin: top center;
+        }
+        .drop li a{
+            background-color: rgba(23, 23, 50, 0.7);
+            padding: 10px 0;
+        }
+        /* menu1 animation */
+        .main li:hover .menu1 li:first-of-type{
+            animation: menu1 0.3s ease-in-out forwards;
+            animation-delay: 0.3s;
+        }
+        .main li:hover .menu1 li:nth-of-type(2){
+            animation: menu1 0.3s ease-in-out forwards;
+            animation-delay: 0.6s;
+        }
+        .main li:hover .menu1 li:nth-of-type(3){
+            animation: menu1 0.3s ease 
+            ease-in-out forwards;
+            animation-delay: 0.9s;
+        }
+        .main li:hover .menu1:last-of-type{
+            animation: menu1 0.3s ease-in-out forwards;
+            animation-delay: 1.2s;
+        }
+        @keyframes menu1{
+            from{
+                opacity: 0;
+                transform: translate(30px) rotateY(90deg);
+            }
+            to{
+                opacity: 1;
+                transform: translate(0) rotateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Drop Menu Pure CSS</h1>
+    <nav>
+        <ul class="main">
+            <li>
+                <a href="#">Home</a>
+                <ul class="drop menu1">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">news</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">about</a></li>
+
+                </ul>
+            </li>
+            <li><a href="#">news</a>
+            <ul class="drop menu2">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">about</a></li>
+            </ul></li>
+            <li><a href="#">contact</a>
+            <ul class="drop menu3">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">about</a></li>
+            </ul></li>
+            <li><a href="#">Works</a>
+            <ul class="drop menu4">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">about</a></li>
+            </ul></li>
+            <li><a href="#">Team</a>
+            <ul class="drop menu5">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="$">contact</a></li>
+                <li><a href="#">about</a></li>
+            </ul>
+            </li>
+            <li><a href="#">About</a>
+            <ul class="drop menu6">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="$">contact</a></li>
+                <li><a href="#">about</a></li>
+            </ul></li>
+
+        </ul>
+    </nav>
+
+    
+</body>
+</html>
