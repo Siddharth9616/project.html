@@ -1,42 +1,4 @@
-// const balance = document.getElementById(
-//     "balance"
-// );
 
-// const monet_plus = document.getElementById('money-plus');
-// const money_minus = document.getElementById('money-minus');
-// const list = document.getElementById("list");
-// const form = document.getElementById("form");
-// const text = document.getElementById('text');
-// const amount = document.getElementById('amount');
-
-// const dummyTransaction = [
-//     { id: 1, text: "Flower", amount: -20 },
-//     { id: 2, text: "Salary", amount: 300 },
-//     { id: 3, text: "Book", amount: -10 },
-//     { id: 4, text: "Camera", amount: 150 },
-
-// ];
-
-// let Transaction = dummyTransaction;
-
-// function addTransaction(transaction) {
-//     const sigh = transaction[0].amount < 0 ? "-" : "+";
-//     const item = document.createElement("li");
-
-//     item.classList.add(
-//         transaction[0].amount < 0 ? "minus" : "plus"
-//     )
-    
-//     item.innerHTML = `
-//     ${transaction[0].text}<span>${sigh}${Math.abs(transaction[0].amount)} </span>
-//     <button class="delete-btn" onclick="">x</button>
-//     `;
-
-//     list.appendChild(item);
-    
-// }
-
-// addTransaction(Transaction);
 
 const balance = document.getElementById(
     "balance"
